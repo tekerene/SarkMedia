@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon>Menu</mat-icon>
+        </button>
+        <span> APP LOGO </span>
+        
+       <div>
+           <ul>
+               <li>
+                   <button mat-icon-button>
+                       <mat-icon>settings</mat-icon>
+                   </button>
+               </li>
+               <li>
+                <button mat-icon-button>
+                    <mat-icon>help outline</mat-icon>
+                </button>
+               </li>
+               <li>
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>Person_outline</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <mat-icon>exit_to_app</mat-icon>SignOut
+                    </button>
+                </mat-menu>
+               </li>
+           </ul>
+       </div>
+       
+    </mat-toolbar-row>
+</mat-toolbar>
