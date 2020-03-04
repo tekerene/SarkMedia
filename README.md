@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# SarkMedia
+Social media Post
+>>>>>>> 2eb621564c12e2cb7874f763006dad6d6a75e456
