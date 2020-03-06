@@ -1,30 +1,38 @@
 <mat-toolbar color="primary">
     <mat-toolbar-row>
-        <button mat-icon-button>
-            <mat-icon>Menu</mat-icon>
+        <button mat-icon-button (click)="toggleSideBar()">
+             <mat-icon>line_weight</mat-icon>Menu
         </button>
-        <span>SarkMedia</span>
+        <span class="header-text">SarkMedia</span>
         
-       <div>
-           <ul>
-               <li>
+       <div class="navbar">
+           <ul class="row items">
+            <li class="list-item">
+                <button mat-icon-button>
+                    <mat-icon>home</mat-icon>Home
+                </button>
+            </li>
+               <li class="list-item">
                    <button mat-icon-button>
-                       <mat-icon>settings</mat-icon>
+                       <mat-icon>settings</mat-icon>settings
                    </button>
                </li>
-               <li>
+               <li class="list-item">
                 <button mat-icon-button>
-                    <mat-icon>help outline</mat-icon>
+                    <mat-icon>help_outline</mat-icon>help
                 </button>
                </li>
-               <li>
+               <li class="list-item">
                 <button mat-button [matMenuTriggerFor]="menu">
-                    <mat-icon>Person_outline</mat-icon>
+                    <mat-icon>account_box</mat-icon>Person_outline
                 </button>
                 <mat-menu #menu="matMenu">
                     <button mat-menu-item>
                         <mat-icon>exit_to_app</mat-icon>SignOut
+                    </button><button mat-menu-item>
+                        <mat-icon></mat-icon>New Account
                     </button>
+
                 </mat-menu>
                </li>
            </ul>

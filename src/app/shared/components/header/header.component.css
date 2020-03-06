@@ -1,3 +1,20 @@
 ul li {
     list-style: none;
 }
+.items {
+    display: flex !important;
+    width: 70% auto;
+   
+}
+.header-text {
+    margin: 1px auto;
+    font-weight: 900;
+    font-size: larger;
+}
+.list-item {
+    margin-left: 60px;
+
+}
+.list-item button {
+    margin: 5px;
+}

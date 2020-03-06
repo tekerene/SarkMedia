@@ -1,0 +1,15 @@
+mat-card {
+    display: flex !important;
+    /* padding: 20px;
+    margin-left: 4px; */
+   width: auto;
+}
+.row {
+    margin-right:15px !important;
+    width: 100%;
+}
+.one {
+     padding-right: 18%; 
+   
+   
+}
