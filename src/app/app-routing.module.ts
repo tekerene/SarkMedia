@@ -3,22 +3,33 @@ import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './module/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
+import { HomeComponent } from './home';
+import { AuthGuard } from './_helpers';
+import { LoginComponent } from './login';
+import { RegisterComponent } from './register';
 
 
-const routes: Routes = [{
-  path: '',
-  component: DefaultComponent,
+const routes: Routes = [
+ { path: '', component: DefaultComponent,
   children: [{
     path: '',
     component: DashboardComponent
-  }, {
+  }, 
+  {
     path: 'posts',
     component:PostsComponent 
-  }]
-}];
+  },
+   {
+    path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
+    { path: '**', redirectTo: '' }
+]
+ }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule{};
