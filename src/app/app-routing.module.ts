@@ -3,10 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './module/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
-import { HomeComponent } from './home';
-import { AuthGuard } from './_helpers';
-import { LoginComponent } from './login';
-import { RegisterComponent } from './register';
+import { HomeComponent } from './resgis/home';
+import { AuthGuard } from './resgis/_helpers';
+import { LoginComponent } from './resgis/login';
+import { RegisterComponent } from './resgis/register';
 
 
 const routes: Routes = [
@@ -19,11 +19,11 @@ const routes: Routes = [
     path: 'posts',
     component:PostsComponent 
   },
-   {
-    path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: '**', redirectTo: '' }
+  //  {
+  //   path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+  //   { path: 'login', component: LoginComponent },
+  //   { path: 'register', component: RegisterComponent },
+  //   { path: '**', redirectTo: '' }
 ]
  }
 ];
