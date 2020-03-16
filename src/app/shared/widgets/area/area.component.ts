@@ -36,20 +36,19 @@ export class AreaComponent implements OnInit {
         enabled: true,
       },
       series: [{
-        name: 'Asia',
+        name: 'Facebook',
         data: [502, 635, 809, 947, 1402, 3634, 5268]
       },{
-        name:'Africa',
-        title: 'Facebook',
+        name:'Twitter',
         data: [106, 107, 111, 133, 221, 767, 1766]
     }, {
-      name: 'Europe',
+      name: 'Instagram',
       data: [163, 203, 276, 408, 547, 729, 628]
     }, {
-      name: 'America',
+      name: 'Pinterest',
       data: [18, 31, 54, 156, 339, 818, 1201]
     },  {
-      name: 'Oceania',
+      name: 'Linedin',
       data: [2, 2, 2, 6, 13, 30, 46]
     }]
     };

@@ -10,6 +10,7 @@ import { RegisterComponent } from './resgis/register';
 
 
 const routes: Routes = [
+ { path: '**', redirectTo: 'resgis' },
  { path: '', component: DefaultComponent,
   children: [{
     path: '',
@@ -18,7 +19,8 @@ const routes: Routes = [
   {
     path: 'posts',
     component:PostsComponent 
-  },
+  }
+  
   //  {
   //   path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   //   { path: 'login', component: LoginComponent },

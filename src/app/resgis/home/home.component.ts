@@ -4,7 +4,7 @@ import { first } from 'rxjs/operators';
 import { UserService, AuthenticationService } from '../_services';
 import { User } from '../_models';
 
-@Component({ templateUrl: 'home.component.html' })
+@Component({selector:'app-home', templateUrl: 'home.component.html' })
 export class HomeComponent implements OnInit {
     currentUser: User;
     users = [];
@@ -16,19 +16,19 @@ export class HomeComponent implements OnInit {
         this.currentUser = this.authenticationService.currentUserValue;
     }
 
-    ngOnInit() {
-        this.loadAllUsers();
-    }
+     ngOnInit() {
+//         this.loadAllUsers();
+     }
 
-    deleteUser(id: number) {
-        this.userService.delete(id)
-            .pipe(first())
-            .subscribe(() => this.loadAllUsers());
-    }
+//     deleteUser(id: number) {
+//         this.userService.delete(id)
+//             .pipe(first())
+//             .subscribe(() => this.loadAllUsers());
+//     }
 
-    private loadAllUsers() {
-        this.userService.getAll()
-            .pipe(first())
-            .subscribe(users => this.users = users);
-    }
-}
+//     private loadAllUsers() {
+//         this.userService.getAll()
+//             .pipe(first())
+//             .subscribe(users => this.users = users);
+//     }
+ }

@@ -12,10 +12,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 offset-sm-3">
+ <router-outlet>
 
-<app-login>
-    <router-outlet></router-outlet>
-</app-login>
+   <app-login>
+        <app-register></app-register>
+    </app-login>
+
+</router-outlet>
+
 </div>
         </div>
     </div>

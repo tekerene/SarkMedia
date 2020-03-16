@@ -1,4 +1,8 @@
-﻿<h2>Register</h2>
+﻿<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 offset-sm-3">
+<h2>Register</h2>
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="firstName">First Name</label>
@@ -32,8 +36,13 @@
     <div class="form-group">
         <button [disabled]="loading" class="btn btn-primary">
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+            <span *ngIf="f.password.invalid && f.username.invalid"  routerLinkActive="router-link-active"></span>
             Register
         </button>
-        <a routerLink="/login" class="btn btn-link">Cancel</a>
+        <a routerLink="/resgis/login" class="btn btn-link">Cancel</a>
     </div>
 </form>
+            </div>
+        </div>
+    </div>
+</div>
