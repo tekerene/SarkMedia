@@ -8,12 +8,12 @@ import { ResgisComponent } from './resgis.component';
 
 const routes: Routes = [
     { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'resgis/login', component: LoginComponent },
-    { path: 'resgis/register', component: RegisterComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
     { path: 'resgis' , component: ResgisComponent},
 
     // otherwise redirect to home
-    { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'login' }
 ];
 
 export const appRoutingModule = RouterModule.forRoot(routes);

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 offset-sm-3">
-<router-outlet>
+
 
     <h2>Login</h2>
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
@@ -27,10 +27,10 @@
             <span *ngIf="f.username.invalid && f.password.invalid" [routerLink]="['/']" routerLinkActive="router-link-active"></span>
             Login
         </button>
-        <a routerLink="/resgis/register/" class="btn btn-link">Register</a>
+        <a routerLink="/register" class="btn btn-link">Register</a>
     </div>
 </form>
-</router-outlet>
+
             </div>
         </div>
     </div>
