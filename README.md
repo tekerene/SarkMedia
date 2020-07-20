@@ -28,5 +28,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 =======
 # SarkMedia
-Social media Post
+An Open Source Automated Social media Post. Where you are allow to schedule a single or multiple posts to all your registered social media accounts registered on sarkmedia.
+
 >>>>>>> 2eb621564c12e2cb7874f763006dad6d6a75e456
